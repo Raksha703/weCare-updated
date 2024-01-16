@@ -1,17 +1,16 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose'
 
-const dbConnect = async () => {
+export const dbConnect = () => {
   if (mongoose.connection.readyState >= 1) {
-    return;
+    return
   }
-
-  let DB_URI: string = "";
-
-  if (process.env.NODE_ENV === "development")
-    DB_URI = process.env.DB_LOCAL_URI!;
-  if (process.env.NODE_ENV === "production") DB_URI = process.env.DB_URI!;
-
-  await mongoose.connect(DB_URI).then((con)=> console.log('DB connected'));
-};
-
-export default dbConnect;
+  mongoose.set("strictQuery", false)
+  mongoose
+    .connect(process.env.DB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    })
+    .then(() => {
+      console.log('Connected to database')
+    })
+}
