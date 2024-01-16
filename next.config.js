@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    API_URL: "http://wecare.pratyushsahu.com",
-    DB_LOCAL_URI: "http://wecare.pratyushsahu.com",
+    API_URL: "wecare-volunteer.vercel.app",
+    DB_LOCAL_URI: "wecare-volunteer.vercel.app",
     DB_URI: "mongodb+srv://weCare:weCare@cluster0.aaqovt1.mongodb.net/Cluster0?retryWrites=true&w=majority",
 
     NEXTAUTH_URL : "http://localhost:3000",
