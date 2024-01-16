@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    API_URL: "https://wecare-volunteer.vercel.app/",
+    API_URL: "https://wecare-volunteer.vercel.app",
     DB_LOCAL_URI: "mongodb+srv://weCare:weCare@cluster0.aaqovt1.mongodb.net/Cluster0?retryWrites=true&w=majority",
     DB_URI: "mongodb+srv://weCare:weCare@cluster0.aaqovt1.mongodb.net/Cluster0?retryWrites=true&w=majority",
 
-    NEXTAUTH_URL : "https://wecare-volunteer.vercel.app/",
+    NEXTAUTH_URL : "https://wecare-volunteer.vercel.app",
     NEXTAUTH_SECRET:"qwertyuiop",
 
     STRIPR_WEBHOOK_SECRET: "whsec_dWBTLCFfTNtkq0uXYnw5KJtlm5GL1D1M",
