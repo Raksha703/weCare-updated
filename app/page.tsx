@@ -2,7 +2,7 @@ import Home from "@/components/Home";
 import Error from "./error";
 
 export const metadata = {
-  title: "Home - BookIT",
+  title: "Home - WeCare",
   description: "Home page",
 };
 

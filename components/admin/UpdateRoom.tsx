@@ -57,9 +57,9 @@ const UpdateRoom = ({ data }: Props) => {
     }
 
     if (isSuccess) {
-      revalidateTag("RoomDetails");
+      revalidateTag("AppealDetails");
       router.refresh();
-      toast.success("Room Updated");
+      toast.success("Appeal Updated");
     }
   }, [error, isSuccess]);
 
@@ -113,7 +113,7 @@ const UpdateRoom = ({ data }: Props) => {
           className="shadow rounded bg-body"
           onSubmit={submitHandler}
           encType="multipart/form-data">
-          <h2 className="mb-4">Update Room</h2>
+          <h2 className="mb-4">Update Appeal</h2>
           <div className="mb-3">
             <label htmlFor="name_field" className="form-label">
               Name

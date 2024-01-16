@@ -103,10 +103,10 @@ const BookingDatePicker = ({ room }: Props) => {
   return (
     <div className="booking-card shadow p-4">
       <p className="price-per-night">
-        <b>€{room?.pricePerNight}</b> / night
+        <b>Rs{room?.pricePerNight}</b>/- Donation required
       </p>
       <hr />
-      <p className="mt-5 mb-3">Pick Check In & Check Out Date</p>
+      <p className="mt-5 mb-3">Confirm the Date</p>
 
       <DatePicker
         className="w-100"
@@ -122,13 +122,13 @@ const BookingDatePicker = ({ room }: Props) => {
 
       {isAvailable === true && (
         <div className="alert alert-success my-3 font-weight-bold">
-          Room is available. Book now.
+          Appeal is available. Book now.
         </div>
       )}
 
       {isAvailable === false && (
         <div className="alert alert-danger my-3 font-weight-bold">
-          Room not available. Try different dates.
+          Appeal not available. Try different dates.
         </div>
       )}
 

@@ -48,7 +48,7 @@ const NewRoom = () => {
 
     if (isSuccess) {
       router.push("/admin/rooms");
-      toast.success("Room created");
+      toast.success("Appeal raised");
     }
   }, [error, isSuccess]);
 
@@ -88,11 +88,11 @@ const NewRoom = () => {
   };
 
   const roomFeatures: { name: string; value: keyof typeof roomDetails }[] = [
-    { name: "Internet", value: "internet" },
-    { name: "Breakfast", value: "breakfast" },
-    { name: "Air Conditioned", value: "airConditioned" },
+    { name: "Urgency", value: "internet" },
+    { name: "Commodities Acceptance", value: "breakfast" },
+    /*{ name: "Air Conditioned", value: "airConditioned" },
     { name: "Pets Allowed", value: "petsAllowed" },
-    { name: "Room Cleaning", value: "roomCleaning" },
+    { name: "Room Cleaning", value: "roomCleaning" },*/
   ];
 
   return (
@@ -102,7 +102,7 @@ const NewRoom = () => {
           className="shadow rounded bg-body"
           onSubmit={submitHandler}
           encType="multipart/form-data">
-          <h2 className="mb-4">New Room</h2>
+          <h2 className="mb-4">New Appeal</h2>
           <div className="mb-3">
             <label htmlFor="name_field" className="form-label">
               Name
@@ -119,7 +119,7 @@ const NewRoom = () => {
           </div>
           <div className="mb-3">
             <label htmlFor="price_field" className="form-label">
-              Price
+              Donation Required
             </label>
             <input
               type="text"
@@ -168,8 +168,8 @@ const NewRoom = () => {
               id="room_type_field"
               name="category"
               value={category}
-              onChange={onChange}>
-              {["King", "Single", "Twins"].map((value) => (
+              onChange={onChange}>  {/********************* shyd dikkat dega ******************************/}
+              {["Education", "Food", "Cleanliness"].map((value) => (
                 <option key={value} value={value}>
                   {value}
                 </option>
@@ -180,7 +180,7 @@ const NewRoom = () => {
           <div className="row">
             <div className="mb-3 col">
               <label htmlFor="guest_field" className="form-label">
-                Guest Capacity
+                No. of Volunteers required
               </label>
               <select
                 className="form-select"
@@ -198,7 +198,7 @@ const NewRoom = () => {
 
             <div className="mb-3 col">
               <label htmlFor="numofbeds_field" className="form-label">
-                Number of Beds
+                Donation Targets
               </label>
               <select
                 className="form-select"
@@ -215,7 +215,7 @@ const NewRoom = () => {
             </div>
           </div>
 
-          <label className="mb-3">Room Features</label>
+          <label className="mb-3">More details</label>
 
           {roomFeatures?.map((feature) => (
             <div className="form-check">

@@ -27,7 +27,7 @@ const AllRooms = ({ data }: Props) => {
 
     if (isSuccess) {
       router.refresh();
-      toast.success("Room deleted");
+      toast.success("Appeal deleted");
     }
   }, [error, isSuccess]);
 
@@ -35,7 +35,7 @@ const AllRooms = ({ data }: Props) => {
     const data: { columns: any[]; rows: any[] } = {
       columns: [
         {
-          label: "Room ID",
+          label: "Appeal ID",
           field: "id",
           sort: "asc",
         },
@@ -92,12 +92,12 @@ const AllRooms = ({ data }: Props) => {
   return (
     <div>
       <h1 className="my-5 position-relative">
-        {`${rooms?.length} ${rooms?.length > 1 ? "Rooms" : "Room"}
+        {`${rooms?.length} ${rooms?.length > 1 ? "Appeals" : "Appeal"}
         `}
         <Link
           href="/admin/rooms/new"
           className="mt-0 btn text-white position-absolute end-0 form-btn">
-          Create Room
+          Create Appeal
         </Link>
       </h1>
 

@@ -1,7 +1,7 @@
 import RoomReviews from "@/components/admin/RoomReviews";
 
 export const metadata = {
-  title: "Room Reviews - BookIT",
+  title: "Appeals Reviews - BookIT",
 };
 
 export default function AdminRoomReviewsPage() {

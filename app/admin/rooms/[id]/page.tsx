@@ -3,7 +3,7 @@ import UpdateRoom from "@/components/admin/UpdateRoom";
 import { getAuthHeader } from "@/helpers/authHeader";
 
 export const metadata = {
-  title: "Update Room - ADMIN",
+  title: "Update Appeal - ADMIN",
 };
 
 const getRoom = async (id: string) => {

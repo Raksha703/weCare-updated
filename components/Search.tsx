@@ -28,7 +28,7 @@ const Search = () => {
     <div className="row wrapper mt-5">
       <div className="col-10 col-lg-5">
         <form className="shadow rounded" onSubmit={submitHandler}>
-          <h2 className="mb-3">Search Rooms</h2>
+          <h2 className="mb-3">Search Appeals</h2>
           <div className="form-group mt-3">
             <label htmlFor="location_field" className="mb-1">
               {" "}
@@ -47,7 +47,7 @@ const Search = () => {
           <div className="form-group mt-3">
             <label htmlFor="guest_field" className="mb-1">
               {" "}
-              No. of Guests{" "}
+              No. of Volunteers{" "}
             </label>
             <select
               className="form-select"
@@ -65,14 +65,14 @@ const Search = () => {
           <div className="form-group mt-3">
             <label htmlFor="room_type_field" className="mb-1">
               {" "}
-              Room Type{" "}
+              Appeal Category{" "}
             </label>
             <select
               className="form-select"
               id="room_type_field"
               value={category}
               onChange={(e) => setCategory(e.target.value)}>
-              {["King", "Single", "Twins"].map((type) => (
+              {["Eductaion", "Cleaning", "Food"].map((type) => (
                 <option key={type} value={type}>
                   {type}
                 </option>

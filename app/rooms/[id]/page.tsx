@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props) {
   const data = await getRoom(params?.id);
 
   return {
-    title: `${data?.room?.name} - BookIT`,
+    title: `${data?.room?.name} - WeCare`,
     description: `${data?.room?.description}`,
   };
 }

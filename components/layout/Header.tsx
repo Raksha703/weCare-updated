@@ -30,9 +30,9 @@ const Header = () => {
           <div className="navbar-brand">
             <a href="/">
               <img
-                style={{ cursor: "pointer" }}
-                src="/images/bookit_logo.png"
-                alt="BookIT"
+                style={{ cursor: "pointer", height:"70px" }}
+                src="/images/weCare_logo.png"
+                alt="WeCare"
               />
             </a>
           </div>
@@ -73,7 +73,7 @@ const Header = () => {
                 )}
 
                 <Link href="/bookings/me" className="dropdown-item">
-                  My Bookings
+                  My Appeals
                 </Link>
                 <Link href="/me/update" className="dropdown-item">
                   Profile

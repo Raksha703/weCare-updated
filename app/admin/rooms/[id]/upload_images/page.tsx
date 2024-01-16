@@ -2,7 +2,7 @@ import Error from "@/app/error";
 import UploadRoomImages from "@/components/admin/UploadRoomImages";
 
 export const metadata = {
-  title: "Upload Room Images - ADMIN",
+  title: "Upload Appeal Images - ADMIN",
 };
 
 const getRoom = async (id: string) => {

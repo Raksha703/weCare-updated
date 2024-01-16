@@ -31,9 +31,9 @@ const RoomReviews = () => {
     }
 
     if (isSuccess) {
-      revalidateTag("RoomDetails");
+      revalidateTag("AppealDetails");
       router.refresh();
-      toast.success("Review deleted");
+      toast.success("Appeal deleted");
     }
   }, [error, isSuccess]);
 
@@ -95,7 +95,7 @@ const RoomReviews = () => {
       <div className="row justify-content-center mt-5">
         <div className="col-6">
           <div className="form-check">
-            <label htmlFor="roomId_field">Enter Room ID</label>
+            <label htmlFor="roomId_field">Enter Appeal ID</label>
             <input
               type="text"
               id="roomId_field"

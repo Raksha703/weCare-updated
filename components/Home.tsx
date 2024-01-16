@@ -28,16 +28,16 @@ const Home = ({ data }: Props) => {
             ? ` ${filteredRoomsCount} ${
                 filteredRoomsCount === 1 ? "room" : "rooms"
               } found at ${location}`
-            : "All Rooms"}
+            : "All Appeals"}
         </h2>
 
         <Link href="/search" className="ml-2 back-to-search">
-          <i className="fa fa-arrow-left me-2"></i> Back to Search
+          <i className="fa fa-search me-2"></i> Search
         </Link>
         <div className="row mt-4">
           {rooms?.length === 0 ? (
             <div className="alert alert-danger mt-5 w-100">
-              <b>No Rooms.</b>
+              <b>No Apeals.</b>
             </div>
           ) : (
             rooms?.map((room) => <RoomItem key={room._id} room={room} />)

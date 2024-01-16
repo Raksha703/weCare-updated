@@ -4,7 +4,7 @@ import AllBookings from "@/components/admin/AllBookings";
 import { getAuthHeader } from "@/helpers/authHeader";
 
 export const metadata = {
-  title: "All Bookings - ADMIN",
+  title: "All Appeals - ADMIN",
 };
 
 const getBookings = async () => {

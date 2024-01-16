@@ -50,7 +50,6 @@ export const createARoom = catchAsyncErrors(async (req: NextRequest) => {
 });
 
 // Get a single room details   =>   /api/rooms/:id
-
 export const getARoom = catchAsyncErrors(
   async (req: NextRequest, { params }: { params: { id: string } }) => {
     const room = await Room.findById(params.id).populate("reviews.user");

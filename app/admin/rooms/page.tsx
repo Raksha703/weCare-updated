@@ -3,7 +3,7 @@ import AllRooms from "@/components/admin/AllRooms";
 import { getAuthHeader } from "@/helpers/authHeader";
 
 export const metadata = {
-  title: "All Rooms - ADMIN",
+  title: "All Appeals - ADMIN",
 };
 
 const getRooms = async () => {

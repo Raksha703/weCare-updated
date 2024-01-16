@@ -15,13 +15,13 @@ const AdminSidebar = () => {
     },
     {
       id: 2,
-      name: "Rooms",
+      name: "Appeals",
       icon: "fas fa-hotel",
       url: "/admin/rooms",
     },
     {
       id: 3,
-      name: "Bookings",
+      name: "Donations",
       icon: "fas fa-receipt",
       url: "/admin/bookings",
     },
