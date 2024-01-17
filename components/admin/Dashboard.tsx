@@ -9,6 +9,8 @@ import SalesStats from "./SalesStats";
 import { useLazyGetSalesStatsQuery } from "@/redux/api/bookingApi";
 import { SalesChart } from "../charts/SalesCharts";
 import { TopPerformingChart } from "../charts/TopPerformingChart";
+import { LineSalesChart } from "../charts/LineSalesChart";
+import { BarTopPerformingChart } from "../charts/BarTopPerformingChart";
 
 const Dashboard = () => {
   const [startDate, setStartDate] = useState(new Date());
@@ -76,13 +78,15 @@ const Dashboard = () => {
       <div className="row">
         <div className="col-12 col-lg-8">
           <h4 className="my-5 text-center">Donation History</h4>
-          <SalesChart salesData={data?.sixMonthSalesData} />
+          <LineSalesChart salesData={data?.sixMonthSalesData} />
+          {/*<SalesChart salesData={data?.sixMonthSalesData} />*/}
         </div>
 
         <div className="col-12 col-lg-4 text-center">
           <h4 className="my-5">Top Helped Appeals</h4>
           {data?.topRooms?.length > 0 ? (
-            <TopPerformingChart rooms={data?.topRooms} />
+            <BarTopPerformingChart rooms={data?.topRooms} />
+            /*<TopPerformingChart rooms={data?.topRooms} />*/
           ) : (
             <p className="mt-5">No data available</p>
           )}

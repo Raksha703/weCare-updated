@@ -20,7 +20,7 @@ const SalesStats = ({ data }: Props) => {
                   style={{ color: "#dbdee4" }}></i>
               </div>
               <div className="col-10">
-                <p className="card-title">Sales</p>
+                <p className="card-title">Donations</p>
                 <p className="h4">
                   <b>{data && addCommasToAmount(data?.totalSales)}</b>
                 </p>
@@ -39,7 +39,7 @@ const SalesStats = ({ data }: Props) => {
                   style={{ color: "#dbdee4" }}></i>
               </div>
               <div className="col-10">
-                <p className="card-title">Bookings</p>
+                <p className="card-title">Acknowledgements</p>
                 <p className="h4">
                   <b>{data?.numberOfBookings}</b>
                 </p>

@@ -14,3 +14,5 @@ export const dbConnect = () => {
       console.log('Connected to database')
     })
 }
+
+export default dbConnect;

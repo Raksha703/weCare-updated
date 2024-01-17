@@ -31,12 +31,14 @@ const AdminSidebar = () => {
       icon: "fa-solid fa-users",
       url: "/admin/users",
     },
+    /*
     {
       id: 5,
       name: "Reviews",
       icon: "fas fa-star",
       url: "/admin/reviews",
     },
+    */
   ];
 
   const [activeMenuItem, setActiveMenuItem] = useState(pathname);

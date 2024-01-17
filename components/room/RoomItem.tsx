@@ -5,12 +5,28 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import StarRatings from "react-star-ratings";
+//import Map from "./Map";
 
 interface Props {
   room: IRoom;
 }
 
 const RoomItem = ({ room }: Props) => {
+
+  const getCategoryLabel = (category: string) => {
+    switch (category) {
+      case 'King':
+        return 'Education';
+      case 'Twins':
+        return 'Food';
+      case 'Single':
+        return 'Cleanliness';
+      // Add more cases as needed
+      default:
+        return category; // Return the original category if not matched
+    }
+  };
+    
   return (
     <div className="col-sm-12 col-md-6 col-lg-3 my-3 d-flex">
       <div className="card p-2 w-100">
@@ -31,10 +47,18 @@ const RoomItem = ({ room }: Props) => {
           </h5>
           <div className="mt-auto">
             <p className="card-text mt-2">
-              <b>Rs. {room?.pricePerNight}</b>/- donation required
+              <b>{getCategoryLabel(room?.category)}</b>
             </p>
           </div>
+
+          {/*
+          <div className="mt-auto">
+            <p className="card-text mt-2">
+              <b>Rs. {room?.pricePerNight}</b>/- donation required
+            </p>
+          </div>*/}
           <div>
+            {/*
             <div className="d-flex">
               <StarRatings
                 rating={room?.ratings}
@@ -49,12 +73,14 @@ const RoomItem = ({ room }: Props) => {
                 {room?.numOfReviews === 1 ? " Review" : " Reviews"})
               </span>
             </div>
+                */}
             <Link
               className="btn view-btn mt-3 w-100"
               href={`/rooms/${room?._id}`}>
               View Details
             </Link>
           </div>
+          
         </div>
       </div>
     </div>
