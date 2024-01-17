@@ -220,3 +220,35 @@ export const rooms = [
     reviews: [],
   },
 ];
+
+
+/*
+{
+    name: "Rising Together: Village Volunteers Needed for Flood Relief",
+    pricePerNight: 85,
+    description:
+      "Embrace the spirit of community by volunteering in our village. Whether it's empowering through education, ensuring no one goes hungry, or coming together in times of flood, your support can make a significant impact. Join us in building a stronger, more resilient village – where every helping hand creates positive change. Sign up now and be a part of the difference we can make together!",
+    address: "4667 Bicetown Street, New York, NY, 10004",
+    guestCapacity: 3,
+    numOfBeds: 1,
+    isInternet: true,
+    isBreakfast: true,
+    isAirConditioned: false,
+    isPetsAllowed: false,
+    isRoomCleaning: true,
+    ratings: 0,
+    numOfReviews: 0,
+    images: [
+      {
+        public_id: "bookit/demo/ny4n2w1ubdnfktua8std",
+        url: "https://www.shutterstock.com/image-photo/pakistan-flood-stock-image-2022-city-2188233819",
+      },
+      {
+        public_id: "bookit/demo/ao7enhxobr0z1qyxgykr",
+        url: "https://www.shutterstock.com/image-photo/flooded-cars-on-street-city-after-1997980106",
+      },
+    ],
+    category: "King",
+    reviews: [],
+  }
+  */

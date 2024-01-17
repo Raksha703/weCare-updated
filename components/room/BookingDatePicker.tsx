@@ -103,10 +103,10 @@ const BookingDatePicker = ({ room }: Props) => {
   return (
     <div className="booking-card shadow p-4">
       <p className="price-per-night">
-        <b>Rs{room?.pricePerNight}</b>/- Donation required
+        <b>Rs {room?.pricePerNight}</b>/- Funds required
       </p>
       <hr />
-      <p className="mt-5 mb-3">Confirm the Date</p>
+      <p className="mt-5 mb-3">Volunteering Period</p>
 
       <DatePicker
         className="w-100"
@@ -122,7 +122,7 @@ const BookingDatePicker = ({ room }: Props) => {
 
       {isAvailable === true && (
         <div className="alert alert-success my-3 font-weight-bold">
-          Appeal is available. Book now.
+          Please donate.
         </div>
       )}
 
@@ -143,7 +143,7 @@ const BookingDatePicker = ({ room }: Props) => {
           className="btn py-3 form-btn w-100"
           onClick={bookRoom}
           disabled={isLoading}>
-          Pay - €{room?.pricePerNight * daysOfStay}
+          Donate{/* - Rs{room?.pricePerNight * daysOfStay}*/}
         </button>
       )}
     </div>

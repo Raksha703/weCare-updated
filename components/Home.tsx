@@ -16,6 +16,7 @@ interface Props {
 }
 
 const Home = ({ data }: Props) => {
+  
   const searchParams = useSearchParams();
   const location = searchParams.get("location");
 
@@ -23,10 +24,10 @@ const Home = ({ data }: Props) => {
   return (
     <div>
       <section id="rooms" className="container mt-5">
-        <h2 className="mb-3 ml-2 stays-heading">
+        <h2 className="mb-3 ml-2 stays-heading" style={{ color: 'red' }}>
           {location
             ? ` ${filteredRoomsCount} ${
-                filteredRoomsCount === 1 ? "room" : "rooms"
+                filteredRoomsCount === 1 ? "appeals" : "appeals"
               } found at ${location}`
             : "All Appeals"}
         </h2>
@@ -37,7 +38,7 @@ const Home = ({ data }: Props) => {
         <div className="row mt-4">
           {rooms?.length === 0 ? (
             <div className="alert alert-danger mt-5 w-100">
-              <b>No Apeals.</b>
+              <b>No Appeals.</b>
             </div>
           ) : (
             rooms?.map((room) => <RoomItem key={room._id} room={room} />)

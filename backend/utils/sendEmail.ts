@@ -19,7 +19,7 @@ export default async function sendEmail(options: EmailOptions) {
   const message = {
     from: `${process.env.SMTP_FROM_NAME} <${process.env.SMTP_FROM_EMAIL}>`,
     to: options.email,
-    subject: options.subject,
+    subject: "WeCare",
     html: options.message,
   };
 

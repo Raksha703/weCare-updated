@@ -15,9 +15,8 @@ const nextConfig = {
     NEXT_PUBLIC_MAPS_API_KEY: "AIzaSyASt3LolX7nAUVDinJCWUoQ3grkUxzurVo",
   },
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["res.cloudinary.com", "miro.medium.com", "i0.wp.com", "qph.cf2.quoracdn.net", "i.pinimg.com", "static.toiimg.com", "crossbarriers.org", "englishtribuneimages.blob.core.windows.net", "i0.wp.com", "annamrita.org", "www.shutterstock.com", "encrypted-tbn0.gstatic.com", "images.unsplash.com"],
   },
 };
-
 
 module.exports = nextConfig;

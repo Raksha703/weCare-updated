@@ -99,11 +99,11 @@ const UpdateRoom = ({ data }: Props) => {
   };
 
   const roomFeatures: { name: string; value: keyof typeof roomDetails }[] = [
-    { name: "Internet", value: "internet" },
-    { name: "Breakfast", value: "breakfast" },
-    { name: "Air Conditioned", value: "airConditioned" },
+    { name: "Urgency", value: "internet" },
+    { name: "Commodities Acceptance", value: "breakfast" },
+    /*{ name: "Air Conditioned", value: "airConditioned" },
     { name: "Pets Allowed", value: "petsAllowed" },
-    { name: "Room Cleaning", value: "roomCleaning" },
+    { name: "Room Cleaning", value: "roomCleaning" },*/
   ];
 
   return (
@@ -180,7 +180,7 @@ const UpdateRoom = ({ data }: Props) => {
               name="category"
               value={category}
               onChange={onChange}>
-              {["King", "Single", "Twins"].map((value) => (
+              {["Education", "Food", "Cleaning"].map((value) => (
                 <option key={value} value={value}>
                   {value}
                 </option>

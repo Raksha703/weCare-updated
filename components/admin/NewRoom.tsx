@@ -92,7 +92,7 @@ const NewRoom = () => {
     { name: "Commodities Acceptance", value: "breakfast" },
     /*{ name: "Air Conditioned", value: "airConditioned" },
     { name: "Pets Allowed", value: "petsAllowed" },
-    { name: "Room Cleaning", value: "roomCleaning" },*/
+  { name: "Room Cleaning", value: "roomCleaning" },*/
   ];
 
   return (

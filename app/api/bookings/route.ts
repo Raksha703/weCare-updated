@@ -10,7 +10,8 @@ const router = createEdgeRouter<NextRequest, RequestContext>();
 
 dbConnect();
 
-router.use(isAuthenticatedUser).post(newBooking);
+//router.use(isAuthenticatedUser).post(newBooking);
+router.post(newBooking);
 
 export async function POST(request: NextRequest, ctx: RequestContext) {
   return router.run(request, ctx) as Promise<Response>;

@@ -32,13 +32,13 @@ const Search = () => {
           <div className="form-group mt-3">
             <label htmlFor="location_field" className="mb-1">
               {" "}
-              Location{" "}
+              Details{" "}
             </label>
             <input
               type="text"
               className="form-control"
               id="location_field"
-              placeholder="new york"
+              placeholder="Enter details"
               value={location}
               onChange={(e) => setLocation(e.target.value)}
             />
@@ -72,7 +72,7 @@ const Search = () => {
               id="room_type_field"
               value={category}
               onChange={(e) => setCategory(e.target.value)}>
-              {["Eductaion", "Cleaning", "Food"].map((type) => (
+              {["Education", "Cleaning", "Food"].map((type) => (
                 <option key={type} value={type}>
                   {type}
                 </option>

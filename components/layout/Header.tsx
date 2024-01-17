@@ -30,7 +30,7 @@ const Header = () => {
           <div className="navbar-brand">
             <a href="/">
               <img
-                style={{ cursor: "pointer", height:"70px" }}
+                style={{ cursor: "pointer", height:"60px" }}
                 src="/images/weCare_logo.png"
                 alt="WeCare"
               />

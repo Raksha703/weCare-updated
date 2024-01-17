@@ -96,7 +96,7 @@ const AllBookings = ({ data }: Props) => {
   return (
     <div className="container">
       <h1 className="my-5">
-        {bookings?.length} {bookings?.length === 1 ? "Booking" : "Bookings"}
+        {bookings?.length} {bookings?.length === 1 ? "Donation" : "Donations"}
       </h1>
       <MDBDataTable
         data={setBookings()}
